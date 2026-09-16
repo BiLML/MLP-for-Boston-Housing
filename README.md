@@ -9,13 +9,15 @@ Dự án tập trung vào việc áp dụng các kỹ thuật Khoa học dữ li
 ```text
 PR4/
 ├── README.md                       # Tài liệu giới thiệu dự án (File bạn đang đọc)
-├── lab4_explanation.md             # Tài liệu phân tích chuyên sâu về quy trình và ý nghĩa biểu đồ
 ├── data/                           # Dữ liệu dự án
-│   ├── raw/                        # Dữ liệu thô ban đầu (Boston-house-price-data.csv)
-│   └── processed/                  # Dữ liệu sạch sau khi tiền xử lý và xử lý nhiễu
-├── docs/                           # Thư mục chứa tài liệu tham khảo và kế hoạch
-├── models/                         # Nơi lưu trữ trọng số mô hình tốt nhất (.pth)
-├── runs/                           # Nơi lưu trữ lịch sử đồ thị huấn luyện (TensorBoard)
+│   ├── features/                   # Lưu trữ ma trận features (Train/Val/Test đã chuẩn hóa)
+│   ├── processed/                  # Dữ liệu sạch sau khi tiền xử lý và xử lý nhiễu
+│   └── raw/                        # Dữ liệu thô ban đầu (Boston-house-price-data.csv)
+├── docs/                           # Thư mục chứa tài liệu tham khảo và kiến thức
+│   ├── flowcharts/                 # Các sơ đồ Pipeline và Workflow (Mermaid diagrams)
+│   └── lab4_explanation.md         # Tài liệu phân tích chuyên sâu về quy trình và biểu đồ
+├── models/                         # Nơi lưu trữ trọng số mô hình tốt nhất (.pth, .pkl)
+├── runs/                           # Nơi lưu trữ đồ thị huấn luyện TensorBoard (Sẽ sinh ra khi chạy mã)
 └── src/                            # Thư mục mã nguồn chính
     └── lab4.ipynb                  # Tệp Jupyter Notebook chứa toàn bộ pipeline thực hành
 ```
